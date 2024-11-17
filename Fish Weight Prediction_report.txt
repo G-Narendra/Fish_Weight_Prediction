@@ -1,0 +1,28 @@
+Final Report
+Model Training and Results
+After defining the target variable (Weight) and selecting relevant features (Category, Height, Width, Length1, Length2, Length3), the dataset was split into training (70%) and testing (30%) sets. A linear regression model was selected and trained on the training data.
+
+The model training yielded the following coefficients:
+
+Intercept: -684.42
+Coefficients:
+Category: 35.20
+Height: 52.19
+Width: -37.14
+Length1: 11.22
+Length2: 78.11
+Length3: -59.12
+Predictions
+The model was used to predict the weights of the fish in the test set. Here are some of the predicted values:
+
+[475.93, 525.82, 77.63, 881.10, 160.97, 255.94, 361.87, 358.87, 499.83, -150.08, ...]
+Model Evaluation
+The performance of the model was evaluated using the following metrics:
+
+Mean Absolute Error (MAE): 99.59
+R-squared Score: 0.84
+These results indicate that the model explains 84% of the variance in the weight of the fish based on the selected features. The mean absolute error suggests that the average prediction error is about 99.59 grams, which is reasonably accurate given the variability in the fish weights.
+
+Conclusion
+The linear regression model successfully predicts the weight of fish with a good degree of accuracy. Future work could involve exploring other machine learning models, feature engineering, and more comprehensive data preprocessing to further improve predictive performance.
+

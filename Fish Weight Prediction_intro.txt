@@ -1,0 +1,22 @@
+Introduction to the Dataset
+The dataset used in this project is the Fish Market dataset, which contains information about different species of fish. It includes the following columns:
+
+Category: Numerical representation of the species.
+Species: Type of fish (e.g., Bream, Roach, Perch).
+Weight: Weight of the fish in grams.
+Height: Height of the fish in cm.
+Width: Width of the fish in cm.
+Length1: Vertical length of the fish in cm.
+Length2: Diagonal length of the fish in cm.
+Length3: Cross length of the fish in cm.
+The dataset contains 159 entries, with each entry representing a specific fish and its attributes.
+
+Project Description
+The objective of this project is to develop a predictive model for fish weight based on various physical measurements (height, width, and lengths). The project involves the following steps:
+
+Data Import and Initial Exploration: Load the dataset and explore its basic properties such as shape, data types, and summary statistics.
+Feature Selection and Target Definition: Identify the target variable (weight) and select relevant features (category, height, width, lengths) for the predictive model.
+Train-Test Split: Split the dataset into training and testing sets to evaluate model performance.
+Model Selection: Choose a linear regression model for prediction.
+Model Training: Train the model on the training data.
+Prediction and Evaluation: Use the trained model to predict fish weight on the test data and evaluate the model's performance using metrics like mean absolute error and R-squared score.
