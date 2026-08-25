@@ -106,6 +106,15 @@ By testing multiple algorithms, the project ensures the best fit for the data's 
 
 ---
 
+## Engineering Decisions & Challenges Solved
+
+| Challenge | Decision | Why |
+|---|---|---|
+| Multiple regression models to compare | Side-by-side evaluation: Linear, Ridge, Lasso, Random Forest, XGBoost | Different models handle multicollinearity and non-linearity differently — comparison reveals the best fit |
+| Species is categorical but affects weight | One-hot encoding for species before model training | Species is a strong predictor — treating it as numeric would create false ordinal relationships |
+| Feature scaling for linear models | StandardScaler applied to all numeric features | Ridge and Lasso are sensitive to feature scales — unscaled features dominate the penalty term |
+| Overfitting in polynomial features | Cross-validation to select optimal polynomial degree | Higher-degree polynomials fit training data perfectly but generalize poorly — CV finds the sweet spot |
+
 ## 👨‍💻 Author
 
 **Narendra (G‑Narendra)** AI | ML | Python | Full Stack | GenAI Enthusiast
